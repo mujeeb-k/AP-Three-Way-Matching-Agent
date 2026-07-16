@@ -1,0 +1,33 @@
+{
+  "poNumber": "4500001001",
+  "vendorId": "0000100001",
+  "companyCode": "1000",
+  "purchasingOrg": "1000",
+  "currency": "EUR",
+  "status": "OPEN",
+  "createdAt": "2025-01-15",
+  "lines": [
+    {
+      "lineNumber": 10,
+      "materialNumber": "000000000000000042",
+      "description": "Office Chairs",
+      "quantity": 100.000,
+      "unitOfMeasure": "EA",
+      "unitPrice": 25.00000,
+      "netAmount": 2500.00,
+      "currency": "EUR",
+      "deliveryDate": "2025-03-01"
+    },
+    {
+      "lineNumber": 20,
+      "materialNumber": "000000000000000087",
+      "description": "Monitor Stands",
+      "quantity": 50.000,
+      "unitOfMeasure": "EA",
+      "unitPrice": 20.00000,
+      "netAmount": 1000.00,
+      "currency": "EUR",
+      "deliveryDate": "2025-03-01"
+    }
+  ]
+}

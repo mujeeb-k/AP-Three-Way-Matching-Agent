@@ -1,0 +1,23 @@
+{
+  "vendorId": "0000100001",
+  "vendorInvoiceNo": "INV-WRONGPO-001",
+  "source": "S4_ODATA",
+  "companyCode": "1000",
+  "currency": "EUR",
+  "invoiceDate": "2025-03-01",
+  "postingDate": "2025-03-01",
+  "totalAmount": 1000.00,
+  "netAmount": 1000.00,
+  "poNumber": "9999999999",
+  "lines": [
+    {
+      "lineNumber": 10,
+      "description": "Some Item",
+      "quantity": 10.00,
+      "unitOfMeasure": "EA",
+      "unitPrice": 100.00,
+      "netAmount": 1000.00,
+      "poLine": 10
+    }
+  ]
+}

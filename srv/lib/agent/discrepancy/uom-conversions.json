@@ -1,0 +1,63 @@
+{
+  "_comment": "UOM conversion table for the UOM_MISMATCH detector. Each entry defines a canonical unit and its aliases with conversion factors. 'requiresHumanReview' marks conversions that are ambiguous by product (e.g. box size varies) and must never be applied automatically.",
+
+  "weight": {
+    "canonical": "kg",
+    "units": {
+      "kg":        { "toCanonical": 1,        "aliases": ["kilogram", "kilograms", "kilo", "KG"] },
+      "g":         { "toCanonical": 0.001,    "aliases": ["gram", "grams", "GR", "GRM"] },
+      "mg":        { "toCanonical": 0.000001, "aliases": ["milligram", "milligrams"] },
+      "t":         { "toCanonical": 1000,     "aliases": ["tonne", "tonnes", "metric ton", "metric tons", "MT", "TO"] },
+      "lb":        { "toCanonical": 0.453592, "aliases": ["pound", "pounds", "LB"] },
+      "oz":        { "toCanonical": 0.028350, "aliases": ["ounce", "ounces", "OZ"] }
+    }
+  },
+
+  "count": {
+    "canonical": "EA",
+    "requiresHumanReview": false,
+    "units": {
+      "EA":        { "toCanonical": 1, "aliases": ["each", "Each", "EACH", "ea", "piece", "pieces", "pce", "PCE", "PC", "ST", "STK", "stk", "stuck", "stück", "Stück", "STUCK", "unit", "units", "un", "UN", "no", "NO", "number", "item", "items"] }
+    }
+  },
+
+  "volume": {
+    "canonical": "L",
+    "units": {
+      "L":         { "toCanonical": 1,      "aliases": ["liter", "litre", "liters", "litres", "LT", "LTR"] },
+      "ml":        { "toCanonical": 0.001,  "aliases": ["milliliter", "millilitre", "milliliters", "millilitres", "ML"] },
+      "cl":        { "toCanonical": 0.01,   "aliases": ["centiliter", "centilitre", "CL"] },
+      "m3":        { "toCanonical": 1000,   "aliases": ["cubic meter", "cubic metre", "CBM", "M3"] },
+      "gal":       { "toCanonical": 3.785,  "aliases": ["gallon", "gallons", "GAL"] },
+      "fl oz":     { "toCanonical": 0.02957,"aliases": ["fluid ounce", "fluid ounces", "FL OZ"] }
+    }
+  },
+
+  "length": {
+    "canonical": "m",
+    "units": {
+      "m":         { "toCanonical": 1,      "aliases": ["meter", "metre", "meters", "metres", "MTR", "M"] },
+      "cm":        { "toCanonical": 0.01,   "aliases": ["centimeter", "centimetre", "CM"] },
+      "mm":        { "toCanonical": 0.001,  "aliases": ["millimeter", "millimetre", "MM"] },
+      "km":        { "toCanonical": 1000,   "aliases": ["kilometer", "kilometre", "KM"] },
+      "in":        { "toCanonical": 0.0254, "aliases": ["inch", "inches", "IN"] },
+      "ft":        { "toCanonical": 0.3048, "aliases": ["foot", "feet", "FT"] }
+    }
+  },
+
+  "packaging": {
+    "_comment": "Packaging units — conversion ratio varies by product/agreement. Always requiresHumanReview.",
+    "requiresHumanReview": true,
+    "canonical": "EA",
+    "units": {
+      "BX":        { "toCanonical": null, "aliases": ["box", "boxes", "BOX", "BOXES"] },
+      "CTN":       { "toCanonical": null, "aliases": ["carton", "cartons", "CARTON", "CARTONS", "CT", "CRT"] },
+      "PK":        { "toCanonical": null, "aliases": ["pack", "packs", "PACK", "PACKS", "PKG", "package", "packages"] },
+      "PAL":       { "toCanonical": null, "aliases": ["pallet", "pallets", "PALLET", "PALLETS", "PLT"] },
+      "ROL":       { "toCanonical": null, "aliases": ["roll", "rolls", "ROLL", "ROLLS"] },
+      "BAG":       { "toCanonical": null, "aliases": ["bag", "bags", "BAG", "BAGS"] },
+      "TUB":       { "toCanonical": null, "aliases": ["tube", "tubes", "TUB", "TUBES"] },
+      "SET":       { "toCanonical": null, "aliases": ["set", "sets", "SET", "SETS", "KIT", "kit"] }
+    }
+  }
+}

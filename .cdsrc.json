@@ -1,0 +1,46 @@
+{
+  "requires": {
+    "db": {
+      "[development]": {
+        "kind": "sqlite",
+        "credentials": { "database": ":memory:" },
+        "data": ["db/initial-data"]
+      },
+      "[production]": {
+        "kind": "hana"
+      }
+    },
+    "auth": {
+      "[development]": {
+        "kind": "mocked",
+        "users": {
+          "demo": {
+            "roles": ["AP_CLERK", "AP_MANAGER", "ADMIN"],
+            "password": "demo"
+          }
+        }
+      },
+      "[production]": {
+        "kind": "xsuaa"
+      }
+    },
+    "audit-log": {
+      "[production]": {
+        "kind": "@cap-js/audit-logging",
+        "credentials": { "vcap": {} }
+      }
+    }
+  },
+  "data": {
+    "folder": "db/initial-data"
+  },
+  "features": {
+    "assert_integrity": "DB"
+  },
+  "log": {
+    "levels": {
+      "[development]": { "sql": "debug" },
+      "[production]":  { "sql": "warn" }
+    }
+  }
+}

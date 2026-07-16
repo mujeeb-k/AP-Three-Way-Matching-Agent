@@ -1,0 +1,23 @@
+{
+  "vendorId": "0000100001",
+  "vendorInvoiceNo": "INV-CLEAN-001",
+  "source": "S4_ODATA",
+  "companyCode": "1000",
+  "currency": "EUR",
+  "invoiceDate": "2025-03-01",
+  "postingDate": "2025-03-01",
+  "totalAmount": 2500.00,
+  "netAmount": 2500.00,
+  "poNumber": "4500001001",
+  "lines": [
+    {
+      "lineNumber": 10,
+      "description": "Office Chairs",
+      "quantity": 100.00,
+      "unitOfMeasure": "EA",
+      "unitPrice": 25.00,
+      "netAmount": 2500.00,
+      "poLine": 10
+    }
+  ]
+}

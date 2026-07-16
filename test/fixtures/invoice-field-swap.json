@@ -1,0 +1,32 @@
+{
+  "vendorId": "0000100003",
+  "vendorInvoiceNo": "INV-SWAP-001",
+  "source": "S4_ODATA",
+  "companyCode": "1000",
+  "currency": "EUR",
+  "invoiceDate": "2025-03-01",
+  "postingDate": "2025-03-01",
+  "totalAmount": 5000.00,
+  "netAmount": 5000.00,
+  "poNumber": "4500001001",
+  "lines": [
+    {
+      "lineNumber": 10,
+      "description": "Office Chairs",
+      "quantity": 250.00,
+      "unitOfMeasure": "EA",
+      "unitPrice": 20,
+      "netAmount": 5000.00,
+      "poLine": 10
+    },
+    {
+      "lineNumber": 20,
+      "description": "Monitor Stands",
+      "quantity": 50.00,
+      "unitOfMeasure": "EA",
+      "unitPrice": 100,
+      "netAmount": 5000.00,
+      "poLine": 20
+    }
+  ]
+}

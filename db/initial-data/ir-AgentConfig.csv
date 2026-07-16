@@ -1,0 +1,18 @@
+ID,createdAt,createdBy,modifiedAt,modifiedBy,configKey,configValue,description,updatedBy
+cfg-001,2025-01-01T00:00:00Z,SYSTEM,2025-01-01T00:00:00Z,SYSTEM,auto_correct_threshold,0.92,Confidence >= this value triggers AUTO_CORRECTED recommendation (human still approves),SYSTEM
+cfg-002,2025-01-01T00:00:00Z,SYSTEM,2025-01-01T00:00:00Z,SYSTEM,auto_approve_threshold,0.85,Confidence >= this value triggers AUTO_APPROVED recommendation for false positives (human still confirms),SYSTEM
+cfg-003,2025-01-01T00:00:00Z,SYSTEM,2025-01-01T00:00:00Z,SYSTEM,active_adapter,MOCK,SAP adapter to use: MOCK | S4_CLOUD,SYSTEM
+cfg-004,2025-01-01T00:00:00Z,SYSTEM,2025-01-01T00:00:00Z,SYSTEM,active_ai_provider,MOCK,AI provider: MOCK | ANTHROPIC_DIRECT | SAP_AI_CORE,SYSTEM
+cfg-005,2025-01-01T00:00:00Z,SYSTEM,2025-01-01T00:00:00Z,SYSTEM,active_discrepancy_types,"[""FIELD_SWAP"",""PRICE_VARIANCE"",""QTY_VARIANCE"",""MISSING_GR"",""INVOICE_BEFORE_GR"",""WRONG_PO_REFERENCE"",""LINE_STRUCTURE"",""CURRENCY_MISMATCH"",""ENTITY_MISMATCH"",""MULTI_PO"",""DUPLICATE"",""UOM_MISMATCH"",""SEPARATOR_AMBIGUITY"",""MATERIAL_MISMATCH""]",JSON array of enabled discrepancy detector types,SYSTEM
+cfg-012,2025-01-01T00:00:00Z,SYSTEM,2025-01-01T00:00:00Z,SYSTEM,amount_threshold_critical,50000,Invoice total amount above which all discrepancies escalate to CRITICAL,SYSTEM
+cfg-013,2025-01-01T00:00:00Z,SYSTEM,2025-01-01T00:00:00Z,SYSTEM,tol_price_pct,10,Price variance tolerance percentage,SYSTEM
+cfg-014,2025-01-01T00:00:00Z,SYSTEM,2025-01-01T00:00:00Z,SYSTEM,tol_price_abs,1000,Price variance absolute tolerance in EUR,SYSTEM
+cfg-015,2025-01-01T00:00:00Z,SYSTEM,2025-01-01T00:00:00Z,SYSTEM,tol_qty_pct,5,Quantity variance tolerance percentage,SYSTEM
+cfg-016,2025-01-01T00:00:00Z,SYSTEM,2025-01-01T00:00:00Z,SYSTEM,tol_qty_abs,500,Quantity variance absolute tolerance in EUR,SYSTEM
+cfg-017,2025-01-01T00:00:00Z,SYSTEM,2025-01-01T00:00:00Z,SYSTEM,tol_invoice_vs_receipt,0,Invoice quantity must match the goods receipt exactly,SYSTEM
+cfg-018,2025-01-01T00:00:00Z,SYSTEM,2025-01-01T00:00:00Z,SYSTEM,tol_receipt_vs_po_pct,5,Goods receipt quantity versus PO quantity tolerance percentage,SYSTEM
+cfg-019,2025-01-01T00:00:00Z,SYSTEM,2025-01-01T00:00:00Z,SYSTEM,tol_inv_vs_po_qty_pct,10,Invoice versus PO unit quantity tolerance percentage,SYSTEM
+cfg-020,2025-01-01T00:00:00Z,SYSTEM,2025-01-01T00:00:00Z,SYSTEM,tol_inv_vs_po_qty_abs,1,Invoice versus PO unit quantity absolute tolerance,SYSTEM
+cfg-021,2025-01-01T00:00:00Z,SYSTEM,2025-01-01T00:00:00Z,SYSTEM,tol_inv_vs_po_amount_pct,10,Invoice versus PO total amount tolerance percentage,SYSTEM
+cfg-022,2025-01-01T00:00:00Z,SYSTEM,2025-01-01T00:00:00Z,SYSTEM,tol_inv_vs_po_amount_abs,1000,Invoice versus PO total amount absolute tolerance in EUR,SYSTEM
+cfg-023,2025-01-01T00:00:00Z,SYSTEM,2025-01-01T00:00:00Z,SYSTEM,field_swap_always_llm,true,true = always call LLM for FIELD_SWAP (better audit trail); false = skip LLM when rules alone give 1.0 confidence,SYSTEM

@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            app/react-ui/package-lock.json
+
+      - name: Install backend dependencies
+        run: npm ci
+
+      - name: Lint backend
+        run: npm run lint
+
+      - name: Test reconciliation rules
+        run: npm test -- --runInBand
+
+      - name: Build backend
+        run: npm run build
+
+      - name: Install frontend dependencies
+        working-directory: app/react-ui
+        run: npm ci
+
+      - name: Build frontend
+        working-directory: app/react-ui
+        run: npm run build
