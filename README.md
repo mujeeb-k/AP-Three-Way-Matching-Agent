@@ -216,7 +216,7 @@ These are demonstration assumptions, not universal controls. A production deploy
 Requires Node.js 20 or newer.
 
 ```bash
-git clone https://github.com/lassoregression/AP-Three-Way-Matching-Agent.git
+git clone https://github.com/mujeeb-k/AP-Three-Way-Matching-Agent.git
 cd AP-Three-Way-Matching-Agent
 
 npm ci
@@ -279,4 +279,4 @@ The product concept targets 95% mismatch classification accuracy, 90% diagnosis 
 
 ## License
 
-MIT © 2026 Mujeeb Khan ([lassoregression](https://github.com/lassoregression)). See [LICENSE](LICENSE).
+MIT © 2026 Mujeeb Khan ([mujeeb-k](https://github.com/mujeeb-k)). See [LICENSE](LICENSE).

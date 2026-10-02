@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lassoregression/AP-Three-Way-Matching-Agent"
+    "url": "https://github.com/mujeeb-k/AP-Three-Way-Matching-Agent"
   },
   "engines": {
     "node": ">=20"
